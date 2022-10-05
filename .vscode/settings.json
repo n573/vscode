@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.autoGuessEncoding": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "C_Cpp.default.compileCommands": "",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64"
+}
