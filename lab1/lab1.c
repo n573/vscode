@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void readScores(int* scores, int arrLen) {
+void readScores(int* arr, int arrLen) {
     // int in; 
     // while(in != EOF) {
     //     scanf('%d', &in);
     // }
-    while(scores[arrLen] != EOF) {
-        scanf("%d", &scores[arrLen]);
+    while(arr[arrLen] != EOF) {
+        scanf("%d", &arr[arrLen]);
         arrLen++;
-    int in; 
-    while(in != EOF) {
-        scanf('%d', &in);
+    // int in; 
+    // while(in != EOF) {
+    //     scanf('%d', &in);
     }
     
 
@@ -34,10 +34,11 @@ void sortHistogram() {
 
 int main() {
     // int* scoreList;
-    int scoreList[100];
-    int numScore;
+    // int scores[100];
+    int* scores[100];
+    int numScore=0;
 
-    readScores(scoreList, numScore);
+    readScores(*scores, numScore);
     
 
 
