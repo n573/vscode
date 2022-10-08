@@ -1,7 +1,6 @@
 // Nathan Cauwet
 #include <stdio.h>
 #include <stdbool.h> //bool
-#include <stdlib.h>  //malloc
 
 void readScores(int *s, int *num)
 {
@@ -74,7 +73,7 @@ int main()
 
     displayScores(scores, numScores); // displays
 
-    //calcHistogram(scores, numScores);
+    // calcHistogram(scores, numScores);
 
     return 0;
 }
