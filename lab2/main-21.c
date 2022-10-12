@@ -23,7 +23,7 @@ string *readWords(int *num)
     int i = 0; // count
     while (!done)
     {
-        //printf("Enter word %d: ", i);
+        printf("Enter word %d: ", i);
         string in;
         scanf("%s", in.letters);
         if (strcmp(in.letters, "done") != 0)
