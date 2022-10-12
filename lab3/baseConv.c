@@ -24,7 +24,7 @@ int binToDec(char *bin)
 
     for (int i = 0; i < strlen(bin); i++)
     {
-        out += arr[i] * (2 * i)
+        out += arr[i] * (2 * i);
     }
 
     return out;
