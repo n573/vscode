@@ -23,5 +23,9 @@ int main()
     // unsigned short bs = makeBitSet();
     bitSet bs = makeBitSet();
 
+    setBit(&bs, 1);
+
+    displayBitSet(bs);
+
     return 0;
 }
