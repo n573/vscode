@@ -26,10 +26,10 @@ void setBit(bitSet *bs, int idx)
     // bs[idx] = '1';
     // bitSet tmp[sizeof(bs)]; // storage used for the bitwise XOR
     bitSet tmp = *bs; // storage used for the bitwise XOR
-    tmp = makeBitSet();
+    // tmp = makeBitSet();
     tmp[&idx] = '1';
     // &bs = (bs ^ tmp); // XOR to set
-    for (int i = 0; i < idx; i++)
+    for (int i = 0; i < idx - 1; i++)
     {
         bs[i] = bs[i] ^ tmp[&i];
     }

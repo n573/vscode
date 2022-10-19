@@ -1,5 +1,6 @@
 #include <string.h>
 #include <math.h>
+
 // #include "bitset.c"
 // #include "lab3.c"
 
@@ -59,8 +60,38 @@ char *decToBin(int dec)
     return bin;
 }
 
-// int main()
-// {
+int baseToDec(int base, char *value)
+{
+    int dec = 0;
+    for (int i = 0; i < sizeof(value); i++)
+    {
+        dec += pow((double)(base * value[i]), (double)i);
+    }
+    return dec;
+}
 
-//     return 0;
-// }
+char *decToBase(int base, int dec)
+{
+    // while (dec >= 2)
+    int tmp;
+    char *out = '';
+    int idx = 0;
+    while (dec >= base)
+    {
+        tmp = dec % base;
+        if (tmp != 0)
+        {
+            dec += dec / base;
+            out[idx] = '1';
+        }
+        else if (tmp == 0)
+        {
+            out[idx] = '0';
+        }
+        else
+        {
+            printf("ERROR in decToBase");
+        }
+        idx++;
+    }
+}
