@@ -4,6 +4,10 @@
 #include <math.h>
 
 /*
+ * Nathan Cauwet
+ */
+
+/*
  bitSet makeBitSet(); // Create a new bitset
  displayBitSet(bitSet bs); // Displays the 16 bits of the bitset to the screen
 void setBit(bitSet *bs, int index); // Sets bit 'index' of the bitset to 1
