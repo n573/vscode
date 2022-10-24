@@ -74,7 +74,8 @@ char *decToBase(int base, int dec)
 {
     // while (dec >= 2)
     int tmp;
-    char *out = '';
+    // char *out = '';
+    char *out;
     int idx = 0;
     while (dec >= base)
     {
@@ -94,4 +95,5 @@ char *decToBase(int base, int dec)
         }
         idx++;
     }
+    return out;
 }

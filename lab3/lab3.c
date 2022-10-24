@@ -8,6 +8,7 @@
  */
 
 /*
+    REQUIRED FUNCs in workspace
  bitSet makeBitSet(); // Create a new bitset
  displayBitSet(bitSet bs); // Displays the 16 bits of the bitset to the screen
 void setBit(bitSet *bs, int index); // Sets bit 'index' of the bitset to 1
@@ -17,10 +18,7 @@ int bitValue(bitSet bs, int index); // Returns the value of the bit at 'index'
 
 int main()
 {
-    // bitSet set = makeBitSet();
-    // //// bitValue(set,)
-    // int *dec = binToDec(&set);
-
+    // test number (decimal 25)
     int num = binToDec("11001");
     printf("%d\t", num);
 
