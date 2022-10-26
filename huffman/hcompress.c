@@ -17,8 +17,17 @@ struct tnode
 };
 
 // GenerateFreqTable
-struct tnode GenerateFreqTable(char *filename)
+tnode *GenerateFreqTable(char *filename)
 {
+
+    FILE *in = fopen(file, 'r');
+    tnode *tbl = (tnode *)calloc(128, sizeof(tnode));
+
+    for (int i = 0; i < 128; i++)
+    {
+        tbl[i].c = i;
+        tbl[i].weight = 0;
+    }
 }
 
 // CreateHuffmanTree
