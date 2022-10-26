@@ -6,7 +6,7 @@ void myRun(int n, int *a, int *b, int *c, int start, int stop)
 {
 
     // std::cout << n << " " << start << " - " << stop << "\n";
-    std::string output = std::to_string(n) + " " + std::to_string(start) + " - " + std::to_string(stop) e + "\n";
+    std::string output = std::to_string(n) + " " + std::to_string(start) + " - " + std::to_string(stop) + "\n";
     std::cout << output;
 
     // vec add
