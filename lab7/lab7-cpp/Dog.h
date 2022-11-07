@@ -1,0 +1,23 @@
+#ifndef DOG_H
+#define DOG_H
+#include <iostream>
+#include "Animal.h"
+#include <string>
+
+class Dog : public Animal{
+ private:
+  std::string name;
+
+ public:
+  Dog();
+  Dog(std::string name);
+  Dog(std::string name, std::string color);
+  virtual ~Dog();
+  // void print();
+  Dog(const Dog& d);
+  void getName();
+  void getColor();
+  void getSound();
+
+};
+#endif

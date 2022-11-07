@@ -1,0 +1,23 @@
+all: client server
+
+head: head.o libduSocket.a
+	gcc client.o -fopenmp -L. -lduSocket -o head
+
+head.o: client.c duSocket.h
+	gcc head.c -fopenmp -c
+
+node: node.o libduSocket.a
+	gcc node.o -L. -lduSocket -o node
+
+node.o: node.c duSocket.h
+	gcc node.c -c
+
+libduSocket.o: duSocket.c duSocket.h
+	gcc duSocket.cc -c
+
+clean:
+	rm -f *~
+	rm -f *.o
+	rm -f head
+	rm -f node
+	rm -f libduSocket.a

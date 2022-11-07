@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+#include "duSocket.h"
+
+int main(){
+
+  int arePrime = 0;
+
+  printf("calling \n");
+  callServer("localhost", 8086);
+  printf("got call\n");
+
+  int start = readInt(int);
+  int stop = readInt(int);
+
+  while(start != stop){
+    if(isPrime(start)){
+      arePrime++;
+    }
+    start++;
+  }
+
+  writeInt(arePrime, SOCKETINTCHANGELATER);
+
+  close(SOCKETINTCHANGELATER);
+  
+}

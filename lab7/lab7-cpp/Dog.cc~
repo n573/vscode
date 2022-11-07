@@ -1,0 +1,34 @@
+#include <iostream>
+#include "Dog.h"
+#include <string>
+
+Dog::Dog() : Animal(){
+  std::cout<<"Dog constrrr\n ";
+  this->name = "";
+}
+
+Dog::Dog(char* name, char* color) : Animal(color){
+  std::cout<<"Dog Constrrrrrrrrrrrrr\n";
+  this->name = name;
+}
+
+
+Dog::~Dog(){
+  std::cout<<"Dog dstr\n";
+  
+}
+
+Dog::Dog(const Dog& d) : Animal(d){
+  this->name = d.name;
+}
+
+void Dog::getName(){
+  std::cout<<"dog name: "<<this->name<<"\n";
+}
+
+void Dog::getColor(){
+  std::cout<<"dog color ::::: "<<this->color<<"\n";
+}
+void Dog::getSound(){
+  std::cout<<"dog go bork\n";
+}

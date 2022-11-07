@@ -1,0 +1,22 @@
+#ifndef ANIMAL_H
+#define ANIMAL_H
+#include <iostream>
+#include <string>
+
+class Animal{
+
+ protected:
+  std::string color;
+  // char* sound;
+
+ public:
+  Animal();
+  Animal(std::string color);
+  virtual ~Animal();
+  // void print();
+  virtual  void getSound() = 0;
+  virtual  void getColor();
+  Animal(const Animal& a);
+  
+};
+#endif
