@@ -1,0 +1,1 @@
+g++ Rational.cc ratMain.cc --std=c++11 -o ratrun
