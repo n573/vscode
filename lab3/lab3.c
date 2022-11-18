@@ -23,11 +23,14 @@ int main()
     printf("%d\t", num);
 
     // unsigned short bs = makeBitSet();
-    bitSet bs = makeBitSet();
+    // bitSet bs = makeBitSet();
 
-    setBit(&bs, 1);
+    // setBit(&bs, 1);
 
-    displayBitSet(bs);
+    // displayBitSet(bs);
+
+    // printf("dec2bin for 25: %s", decToBin(25));
+    // printf("bin2dec for 11001: %d", binToDec("11001"));
 
     return 0;
 }

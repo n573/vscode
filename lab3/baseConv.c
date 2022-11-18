@@ -11,8 +11,24 @@ int binToDec(char *bin)
     // char *in = &bin;
     int arr[strlen(bin)];
     for (int k = 0; k < strlen(bin); k++)
+    // for (int k = strlen(bin); k > -1; k--)
     {
-        arr[k] = (int)bin[k];
+        // if (strcmp(&bin[k], "0") == 0)
+        if (bin[k] == '0')
+        {
+            arr[k] = 0;
+        }
+        // else if (strcmp(&bin[k], "1") == 0)
+        else if (bin[k] == '1')
+        {
+            arr[k] = 1;
+        }
+        // else
+        // {
+        //     printf("test\n");
+        // }
+        // arr[k] = (int)bin[k];
+        // printf("%d", arr[k]);
     }
 
     // for (int i = 0; i < strlen(bin); i++) // for (int i = 0; i < strlen(in); i++)
@@ -23,9 +39,18 @@ int binToDec(char *bin)
     //     // int *dec = binToDec(&set);1 or 0)^i -- binary to decimal
     // }
 
-    for (int i = 0; i < strlen(bin); i++)
+    printf("\n");
+    // for (int i = 0; i < strlen(bin); i++)
+    for (int i = sizeof(arr); i > -1; i--)
     {
-        out += arr[i] * (2 * i);
+        // printf("%d", arr[i]);
+        // out += arr[i] * (2 * i);
+        // out += arr[i] * pow(2, i);
+        if (arr[i] == 1)
+        {
+            out += arr[i] * pow(2, i);
+            printf("%d\n", out);
+        }
     }
 
     return out;
@@ -80,7 +105,7 @@ char *decToBase(int base, int dec)
     while (dec >= base)
     {
         tmp = dec % base;
-        if (tmp != 0)
+        if (tmp != 0) // CHECK THIS OUTPUT
         {
             dec += dec / base;
             out[idx] = '1';

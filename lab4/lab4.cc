@@ -30,10 +30,9 @@ void runProc(int start, int stop, int tnum, int *ifPrime)
     }
 }
 
-int *
+// int *
 
-    int
-    main()
+int main()
 {
     int tStart = 10;
     int tEnd = 100;
