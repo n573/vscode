@@ -1,10 +1,11 @@
-all: client server
+#all: client server
+all: head node
 
 head: head.o libduSocket.a
 	gcc client.o -fopenmp -L. -lduSocket -o head
 
-head.o: client.c duSocket.h
-	gcc head.c -fopenmp -c
+#head.o: client.c duSocket.h
+#	gcc head.c -fopenmp -c
 
 node: node.o libduSocket.a
 	gcc node.o -L. -lduSocket -o node

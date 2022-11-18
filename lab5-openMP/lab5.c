@@ -74,7 +74,7 @@ void prime_number_sweep(int n_lo, int n_hi, int n_factor)
   printf("TEST01\n");
   printf("  Call PRIME_NUMBER to count the primes from 1 to N.\n");
   printf("\n");
-  printf("         N        Pi          Time\n");
+  printf("         N        Prime       Time\n");
   printf("\n");
 
   n = n_lo;
